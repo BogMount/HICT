@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Globals</name>
+    <events>
+        <variable comment="Sekuntit" constant="0" name="Sekuntit" sid="3160890804437112" static="0" type="number">5</variable>
+        <variable comment="sekuntin sadasosat" constant="0" name="Sadasosat" sid="6361829716110676" static="0" type="number">0</variable>
+    </events>
+</c2eventsheet>

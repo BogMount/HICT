@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Loader sheet</name>
+    <events>
+        <comment>Tämä on layout on latausta varten. Kun ohjelma on ladattu, niin siirrytään seuraavalle layoutille...</comment>
+        <event-block sid="2541104475957148">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="6765400987018372" type="System">
+                    <param id="0" name="First value">loadingprogress *100</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="6451639666599752" type="Lataus_teksti">
+                    <param id="0" name="Text">round(loadingprogress*100)&amp;&quot;%&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5853996688005905">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="9333373715385374" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2572533706678423" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
